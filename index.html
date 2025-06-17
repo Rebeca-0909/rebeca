@@ -1,11 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>K-Pop Mania</title>
-    <style></style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kpop Mania</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0c0c0c;
+      color: #fff;
+    }
 
+    header {
+      background-color: #ff2d75;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff2d75;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-left: 5px solid #ff2d75;
+      padding-left: 10px;
+    }
+
+    .videos, .grupos {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    iframe, .grupo img {
+      width: 300px;
+      height: 170px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    iframe:hover, .grupo img:hover {
+      transform: scale(1.05);
+    }
+
+    .grupo {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    .grupo span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
 </head>
-    
+<body>
+
+  <header>
+    <h1>Kpop Mania</h1>
+  </header>
+
+  <nav>
+    <a href="#noticias">Notícias</a>
+    <a href="#mvs">MVs</a>
+    <a href="#grupos">Grupos</a>
+  </nav>
+
+  <section id="noticias">
+    <h2>Últimas Notícias</h2>
+    <p>NewJeans quebra recordes de views com comeback explosivo!</p>
+    <p>BTS anuncia documentário especial durante pausa do grupo.</p>
+    <p>Stray Kids se apresenta no Lollapalooza Paris!</p>
+  </section>
+
+  <section id="mvs">
+    <h2>Assista aos MVs</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/gdZLi9oWNZg" frameborder="0" allowfullscreen title="BTS - Dynamite"></iframe>
+      <iframe src="https://www.youtube.com/embed/IOuFEjAE4z0" frameborder="0" allowfullscreen title="BLACKPINK - How You Like That"></iframe>
+      <iframe src="https://www.youtube.com/embed/JsOOis4bBFg" frameborder="0" allowfullscreen title="TWICE - Feel Special"></iframe>
+    </div>
+  </section>
+
+  <section id="grupos">
+    <h2>Conheça os Grupos</h2>
+    <div class="grupos">
+      <a class="grupo" href="https://ibighit.com/bts/eng/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/BTS_logo.svg" alt="BTS logo"/>
+        <span>BTS</span>
+      </a>
+      <a class="grupo" href="https://www.ygfamily.com/artist/Main.asp?LANGDIV=E&ATYPE=2&ARTIDX=70" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/BLACKPINK_Logo.svg/2560px-BLACKPINK_Logo.svg.png" alt="BLACKPINK logo"/>
+        <span>BLACKPINK</span>
+      </a>
+      <a class="grupo" href="https://straykids.jype.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Stray_Kids_Logo.png" alt="Stray Kids logo"/>
+        <span>Stray Kids</span>
+      </a>
+      <a class="grupo" href="https://twice.jype.com/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Twice_logo.svg" alt="TWICE logo"/>
+        <span>TWICE</span>
+      </a>
+      <a class="grupo" href="https://newjeans.kr/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/NewJeans_logo.svg" alt="New Jeans logo"/>
+        <span>NewJeans</span>
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
